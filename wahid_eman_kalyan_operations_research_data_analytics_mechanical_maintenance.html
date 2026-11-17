@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wahid Eman Kalyan — Operations Research, Data Analytics & Mechanical Maintenance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200 antialiased">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-white/85 dark:bg-slate-950/85 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="font-bold text-lg tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-indigo-600 text-white text-sm font-extrabold">WK</span>
+        <span class="hidden sm:inline">Wahid Eman Kalyan</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a>
+        <a href="#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" type="button" aria-label="Toggle dark mode" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors">
+          <svg id="sunIcon" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg id="moonIcon" class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="mobileMenuBtn" type="button" aria-label="Open menu" class="md:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 py-3 space-y-2 text-sm font-medium">
+      <a href="#about" class="mobile-link block py-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600">About</a>
+      <a href="#experience" class="mobile-link block py-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600">Experience</a>
+      <a href="#projects" class="mobile-link block py-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600">Projects</a>
+      <a href="#skills" class="mobile-link block py-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600">Skills</a>
+      <a href="#contact" class="mobile-link block py-1.5 text-slate-700 dark:text-slate-300 hover:text-indigo-600">Contact</a>
+    </div>
+  </header>
+
+  <main id="top" class="max-w-5xl mx-auto px-4 sm:px-6 py-12 space-y-20">
+
+    <!-- Hero -->
+    <section class="pt-4 sm:pt-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 text-xs font-semibold mb-5">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        Open to Operations Research, Data Analytics &amp; Reliability Roles
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+        Wahid Eman Kalyan
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
+        M.Tech in <strong class="font-semibold text-slate-900 dark:text-white">Operations Research</strong> at NIT Durgapur &amp; B.E. in <strong class="font-semibold text-slate-900 dark:text-white">Mechanical Engineering</strong> from Jadavpur University. I bridge <span class="text-indigo-600 dark:text-indigo-400 font-medium">industrial plant operations (SAP PM/MM, Reliability, OEE)</span> with <span class="text-indigo-600 dark:text-indigo-400 font-medium">mathematical optimization and data analytics (Python, Gurobi, SQL, Power BI)</span>.
+      </p>
+
+      <div class="mt-7 flex flex-wrap items-center gap-3">
+        <a href="#projects" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold shadow-sm transition-colors">
+          Explore Projects
+        </a>
+        <a href="https://github.com/wahidemankalyan" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 text-sm font-semibold transition-colors inline-flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub (@wahidemankalyan)
+        </a>
+        <a href="#contact" class="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 text-sm font-semibold transition-colors">
+          Get in Touch
+        </a>
+      </div>
+
+      <!-- Quick Highlights -->
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">15 Mo</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Plant Maintenance &amp; SAP PM Experience</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">M.Tech</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Operations Research, NIT Durgapur</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">B.E.</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Mechanical Engg., Jadavpur University</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">GATE '24</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Mechanical Engineering Qualified</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Education -->
+    <section id="about" class="scroll-mt-20">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">Education &amp; Focus</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white">M.Tech in Operations Research</h3>
+              <p class="text-sm text-indigo-600 dark:text-indigo-400 font-medium">National Institute of Technology (NIT) Durgapur</p>
+            </div>
+            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">Pursuing</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Graduate focus on Mathematical Optimization, Advanced Algorithms, Probability &amp; Statistics, and Graph Theory applied to supply chain, manufacturing, and reliability systems.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white">B.E. in Mechanical Engineering</h3>
+              <p class="text-sm text-indigo-600 dark:text-indigo-400 font-medium">Jadavpur University, Kolkata</p>
+            </div>
+            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">2024</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Core mechanical engineering foundation paired with GATE 2024 qualification and hands-on industrial plant execution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="scroll-mt-20">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">Industrial Experience</h2>
+      <div class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Mechanical Maintenance Engineer (GET / Assistant Manager)</h3>
+            <p class="text-sm font-semibold text-indigo-600 dark:text-indigo-400">Nuvoco Vistas Corp. Ltd. — Panagarh Cement Plant</p>
+          </div>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 w-fit">15 Months</span>
+        </div>
+        <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-300 list-disc pl-5">
+          <li>Managed preventive and breakdown maintenance workflows in <strong class="text-slate-900 dark:text-white">SAP PM</strong> and spare-parts procurement/inventory coordination in <strong class="text-slate-900 dark:text-white">SAP MM</strong>.</li>
+          <li>Executed plant turnaround and shutdown schedules, coordinating cross-functional teams to minimize unplanned downtime.</li>
+          <li>Applied <strong class="text-slate-900 dark:text-white">condition-based monitoring</strong>, CMMS tracking, and <strong class="text-slate-900 dark:text-white">EHS / HSE safety compliance</strong> protocols across heavy rotating and material-handling equipment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="scroll-mt-20">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Projects</h2>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Filter by domain or click any card for the full breakdown.</p>
+        </div>
+        <div id="filterGroup" class="flex flex-wrap gap-2">
+          <button type="button" data-filter="all" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-colors">All (6)</button>
+          <button type="button" data-filter="analytics" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">OR &amp; Analytics (4)</button>
+          <button type="button" data-filter="mechanical" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">Mechanical &amp; SAP PM (3)</button>
+        </div>
+      </div>
+
+      <div id="projectsGrid" class="grid md:grid-cols-2 gap-6">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="scroll-mt-20">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">Technical &amp; Domain Stack</h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold text-sm uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-4">Optimization &amp; Data</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Python</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Pandas</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">NumPy</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">SciPy</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Gurobi Optimizer</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">C++</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">SQL</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold text-sm uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-4">BI &amp; Reporting</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Power BI</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Tableau</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Advanced Excel</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Matplotlib</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Git &amp; GitHub</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold text-sm uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-4">Industrial &amp; ERP</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">SAP PM</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">SAP MM</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">CMMS</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">5-Why RCA</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">Predictive Maintenance</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800">EHS / HSE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-20">
+      <div class="p-8 rounded-3xl bg-slate-900 dark:bg-indigo-950/40 text-white border border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+        <div>
+          <h2 class="text-2xl font-bold">Let's Connect</h2>
+          <p class="text-slate-300 text-sm mt-2 max-w-xl">
+            Available for full-time roles and internships in Operations Research, Data Analytics, Supply Chain, and Mechanical Reliability Engineering.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <button id="copyEmailBtn" type="button" class="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold transition-colors">
+            Copy Email
+          </button>
+          <a href="mailto:wahidemankalyan2000@gmail.com" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-semibold transition-colors">
+            wahidemankalyan2000@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-xs text-slate-500 dark:text-slate-400">
+    Wahid Eman Kalyan · Durgapur / Kolkata, India · Built for GitHub Pages
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/60 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-xl relative">
+      <button id="closeModalBtn" type="button" aria-label="Close modal" class="absolute top-4 right-4 p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div id="modalTag" class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider"></div>
+      <h3 id="modalTitle" class="text-xl font-bold text-slate-900 dark:text-white mt-1 pr-8"></h3>
+      <p id="modalSummary" class="text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed"></p>
+      <div class="mt-4">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">Key Highlights</h4>
+        <ul id="modalBullets" class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300 list-disc pl-5"></ul>
+      </div>
+      <div id="modalTools" class="mt-5 flex flex-wrap gap-2"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 hidden px-4 py-2.5 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-xs font-semibold shadow-lg">
+    Email copied: wahidemankalyan2000@gmail.com
+  </div>
+
+  <script>
+    const projects = [
+      {
+        id: 'oee-dashboard',
+        title: 'Equipment Downtime & OEE Analytics Dashboard',
+        categories: ['analytics', 'mechanical'],
+        badge: 'OR & Analytics · Mechanical',
+        shortDesc: 'Automated equipment downtime tracking, OEE KPI computation, and 5-Why root-cause categorization.',
+        details: 'Designed an end-to-end analytics pipeline that ingests plant maintenance logs, computes Availability, Performance, and Quality metrics for OEE, and categorizes recurring failure modes using 5-Why logic.',
+        bullets: [
+          'Built Python (Pandas) preprocessing scripts to clean raw downtime logs and flag chronic bottleneck assets.',
+          'Developed an interactive Power BI dashboard for maintenance planners to track MTBF, MTTR, and shift-level losses.',
+          'Aligned KPI definitions with SAP PM work-order codes for practical shop-floor adoption.'
+        ],
+        tools: ['Python', 'Pandas', 'Power BI', '5-Why RCA', 'SAP PM']
+      },
+      {
+        id: 'steel-gurobi',
+        title: 'Integrated Steel Manufacturing LP Optimization',
+        categories: ['analytics'],
+        badge: 'Operations Research',
+        shortDesc: 'Linear programming model in Gurobi & Python to optimize multi-stage steel production and resource allocation.',
+        details: 'Formulated a mathematical optimization model for an integrated steel plant balancing raw material blending, furnace capacity, and finished product demand constraints.',
+        bullets: [
+          'Modeled multi-period production constraints and material balance equations using Gurobi Python API.',
+          'Evaluated sensitivity and shadow prices across bottleneck capacity limits to guide scheduling decisions.'
+        ],
+        tools: ['Gurobi Optimizer', 'Python', 'Linear Programming', 'Operations Research']
+      },
+      {
+        id: 'electronics-gurobi',
+        title: 'Smart Electronics Production Planning Model',
+        categories: ['analytics'],
+        badge: 'Operations Research',
+        shortDesc: 'Gurobi optimization script maximizing contribution margin across constrained electronics assembly lines.',
+        details: 'Built a constrained optimization model for smart electronics manufacturing, allocating machine hours, labor, and component inventory across product lines.',
+        bullets: [
+          'Formulated decision variables, objective function, and assembly-line capacity constraints in Python.',
+          'Generated optimal production mix and resource utilization reports.'
+        ],
+        tools: ['Gurobi Optimizer', 'Python', 'SciPy', 'Optimization']
+      },
+      {
+        id: 'plant-maintenance',
+        title: 'Plant Turnaround & SAP PM Reliability Execution',
+        categories: ['mechanical'],
+        badge: 'Mechanical & SAP PM',
+        shortDesc: 'Industrial shutdown planning, condition-based monitoring, and spare-parts coordination at Nuvoco Vistas.',
+        details: 'Led mechanical maintenance execution and planning workflows at Panagarh Cement Plant, integrating ERP work-order discipline with field reliability.',
+        bullets: [
+          'Managed preventive maintenance schedules, notifications, and work orders in SAP PM alongside SAP MM material requisitions.',
+          'Supported condition-based monitoring and EHS/HSE safety compliance during high-intensity plant turnarounds.'
+        ],
+        tools: ['SAP PM', 'SAP MM', 'CMMS', 'Condition-Based Monitoring', 'EHS/HSE']
+      },
+      {
+        id: 'high-speed-rotor-fea',
+        title: 'High-Speed Rotor Rotordynamics & FEA',
+        categories: ['mechanical'],
+        badge: 'Mechanical · ANSYS FEA',
+        shortDesc: 'SolidWorks CAD & ANSYS 2023 R2 modal and centrifugal stress parametric study on high-speed rotors.',
+        details: 'Evaluated the dynamic stability and structural integrity of a high-speed rotor (Ø150 mm disc, Structural Steel, 460 MPa UTS) using damped modal analysis with Coriolis effects and static structural centrifugal loading in ANSYS Workbench 2023 R2.',
+        bullets: [
+          'Bearing stiffness sweep (1 to 10⁹ N/m) raised 1st critical speed from 16,188 rpm to 26,861 rpm (+49% margin above 18,000 rpm).',
+          'Outer radius sweep (50–150 mm) showed 1st critical speed dropping from 73,495 rpm to 6,799 rpm and stress reaching 493.97 MPa at r = 125 mm.',
+          'Identified 30,000 rpm (351.73 MPa) and r < 100 mm as safe Structural Steel bounds, with Titanium/Carbon-Fiber sleeves needed above that.'
+        ],
+        tools: ['ANSYS 2023 R2', 'SolidWorks', 'Rotordynamics', 'FEA', 'Python']
+      },
+      {
+        id: 'graph-cpp',
+        title: 'Graph Theory & Classical Algorithms Suite',
+        categories: ['analytics'],
+        badge: 'Algorithms & C++',
+        shortDesc: 'Modular C++ implementations of shortest-path, minimum spanning tree, and dynamic programming algorithms.',
+        details: 'Implemented core graph and optimization algorithms in C++ with customizable input parameters and structured step-by-step execution traces.',
+        bullets: [
+          'Covers Dijkstra, Floyd-Warshall, Kruskal, BFS/DFS, and Matrix Chain Multiplication.',
+          'Built with clean, reusable templates for algorithmic benchmarking and network-flow analysis.'
+        ],
+        tools: ['C++', 'Graph Theory', 'Dynamic Programming', 'Greedy Algorithms']
+      }
+    ];
+
+    let activeFilter = 'all';
+
+    function renderProjects() {
+      const grid = document.getElementById('projectsGrid');
+      const filtered = activeFilter === 'all'
+        ? projects
+        : projects.filter(p => p.categories.includes(activeFilter));
+
+      grid.innerHTML = filtered.map(p => `
+        <article class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between hover:border-indigo-400 dark:hover:border-indigo-500 transition-colors">
+          <div>
+            <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">${p.badge}</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1.5">${p.title}</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">${p.shortDesc}</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              ${p.tools.map(t => `<span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">${t}</span>`).join('')}
+            </div>
+          </div>
+          <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+            <button type="button" data-project-id="${p.id}" class="open-modal-btn text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
+              View Case Study →
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Filter buttons
+    document.getElementById('filterGroup').addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      activeFilter = btn.dataset.filter;
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        const isActive = b.dataset.filter === activeFilter;
+        b.className = isActive
+          ? 'filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-colors'
+          : 'filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors';
+      });
+      renderProjects();
+    });
+
+    // Modal logic (event delegation)
+    const modal = document.getElementById('projectModal');
+    function openModal(projectId) {
+      const p = projects.find(item => item.id === projectId);
+      if (!p) return;
+      document.getElementById('modalTag').textContent = p.badge;
+      document.getElementById('modalTitle').textContent = p.title;
+      document.getElementById('modalSummary').textContent = p.details;
+      document.getElementById('modalBullets').innerHTML = p.bullets.map(b => `<li>${b}</li>`).join('');
+      document.getElementById('modalTools').innerHTML = p.tools.map(t => `<span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">${t}</span>`).join('');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.getElementById('projectsGrid').addEventListener('click', (e) => {
+      const btn = e.target.closest('.open-modal-btn');
+      if (btn) openModal(btn.dataset.projectId);
+    });
+    document.getElementById('closeModalBtn').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+    // Theme toggle
+    function initTheme() {
+      try {
+        const saved = localStorage.getItem('wk_theme');
+        if (saved === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) {}
+    }
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      try { localStorage.setItem('wk_theme', isDark ? 'dark' : 'light'); } catch (e) {}
+    });
+
+    // Mobile menu toggle
+    const mobileMenu = document.getElementById('mobileMenu');
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Copy email with fallback
+    document.getElementById('copyEmailBtn').addEventListener('click', () => {
+      const email = 'wahidemankalyan2000@gmail.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).catch(() => fallbackCopy(email));
+      } else {
+        fallbackCopy(email);
+      }
+      const toast = document.getElementById('toast');
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 2500);
+    });
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+    }
+
+    initTheme();
+    renderProjects();
+  </script>
+</body>
+</html>
